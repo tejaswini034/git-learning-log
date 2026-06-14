@@ -10,7 +10,7 @@ I'm learning Git and version control to track my work.
 
 ## Today's learnings
 - Git tracks changes to files over time
-- Branches let you experiment without affecting the main project
+- Branches allow you to experiment without affecting the main project
 - You can merge branches back together when ready
 
 ## The Process 
