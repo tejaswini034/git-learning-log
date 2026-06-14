@@ -8,7 +8,7 @@ I'm learning Git and version control to track my work.
 - Learn branching and merging
 - Push my work to GitHub
 
-## What I Learned Today
+## Today's learnings
 - Git tracks changes to files over time
 - Branches let you experiment without affecting the main project
 - You can merge branches back together when ready
@@ -18,7 +18,7 @@ I'm learning Git and version control to track my work.
 - git add
 - git commit
 - git status
-- git log (Use git log --oneline for a compact version of your commit history)
+- git log **(Use git log --oneline for a compact version of your commit history)**
 
 - git checkout -b branch_name   (Alternatively, you can use the modern command: git switch -c branch_name) creates a new branch with the branch name
 (If the branch exists, switch to it using: git checkout branch_name)
