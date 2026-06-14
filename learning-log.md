@@ -9,7 +9,7 @@ I'm learning Git and version control to track my work.
 - Push my work to GitHub
 
 ## What did I learn today
-- Git tracks changes across repo
+- Git tracks changes across the repository
 
 ## The Process 
 - git init
