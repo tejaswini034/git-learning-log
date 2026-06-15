@@ -51,7 +51,7 @@ git merge other_branch
 - git branch -M main
 (Renames the current local branch to main (using the -M flag to force the rename))
 - git push -u origin main (later you can just write git push)
-- git push origin add-resources
+- git push origin branch_name(if_exists)
 
 
 **or push an existing repo**
@@ -60,8 +60,8 @@ git merge other_branch
 - git push -u origin main
 
 ## What's origin?
-It acts as a shortcut: Typing out a long URL like https://github.com/tejaswini034/git-learning-log.git every single time you want to push would be exhausting. By running git remote add origin <URL>, you are telling Git: "From now on, whenever I say 'origin', I mean this exact URL."
-So when you run git push origin main, you are telling Git: "Push my local 'main' branch to the remote destination nicknamed 'origin'."
+It acts as a shortcut: Typing out a long URL like https://github.com/tejaswini034/git-learning-log.git every single time you want to push would be exhausting. By running git remote add origin <URL>, you are telling Git: "From now on, whenever I say 'origin', I mean this exact URL."  
+So when you run git push origin main, you are telling Git: "Push my local 'main' branch to the remote destination nicknamed 'origin'."  
 (I could use absolutely any other word other than origin - but that's the industry standard)
 
 ## graph symbols meaning 
