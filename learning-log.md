@@ -15,12 +15,16 @@ I'm learning Git and version control to track my work.
 ## The Process 
 - git init
 - git add
+git add file_name
 - git commit
+git commit -m "message"
 - git status
 - git log (Use git log --oneline for a compact version of your commit history)
 
 - git checkout -b file_name   (Alternatively, you can use the modern command: git switch -c file_name)
 - git branch
+- git merge
+git merge other_branch
 
 - git push
 - git pull
