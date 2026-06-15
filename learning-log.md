@@ -29,10 +29,36 @@ git commit -m "message"
 - git branch
 - git merge
 git merge other_branch
+- git merge --abort   (to well abort the merging if a conflict arose and you want to pause and look back)
 
 - git push
 - git pull
+- git fetch (fetch a branch from github)
 - git clone
 
+- git branch -d branch_name (delete branch locally)
+- git branch -D branch_name (forced deletion if branch not fully merged)
+- git push origin --delete branch_name (delete remotely if branch to be deleted from github too)
 
+# If doing for the first time (there are no files locally, no commits especially)
+- echo "# git-learning-log" >> README.md
+- git init
+- git add README.md
+- git commit -m "first commit"
+- git remote add origin https://github.com/your GitHub username/git-learning-log.git
+(It assigns this URL the nickname origin (which is the industry standard name for your main remote server))
+- git branch -M main
+(Renames the current local branch to main (using the -M flag to force the rename))
+- git push -u origin main
+- git push origin add-resources
+
+# What's origin?
+It acts as a shortcut: Typing out a long URL like https://github.com/tejaswini034/git-learning-log.git every single time you want to push would be exhausting. By running git remote add origin <URL>, you are telling Git: "From now on, whenever I say 'origin', I mean this exact URL."
+So when you run git push origin main, you are telling Git: "Push my local 'main' branch to the remote destination nicknamed 'origin'."
+(I could use absolutely any other word other than origin - but that's the industry standard)
+
+## graph symbols meaning 
+- * means a commit
+- | means history continuing 
+- / or \ means a branch split or merge
 
