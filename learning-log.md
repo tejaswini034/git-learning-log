@@ -5,8 +5,8 @@ I'm learning Git and version control to track my work.
 
 ## Goals
 - [x] Understand how commits work
-- [] Learn branching and merging
-- [] Push my work to GitHub
+- [x] Learn branching and merging
+- [x] Push my work to GitHub
 
 ## What I Learned Today
 - Git is like a time machine for your files
@@ -76,8 +76,9 @@ So when you run git push origin main, you are telling Git: "Push my local 'main'
 - `*ab*` for *italics*
 - `**abc**` for **bold**
 - `***abc***` for ***both***
--  `...` to `highlight` code and commands
+-  ```...``` to `highlight` code and commands
 - Use triple backticks (```) on separate lines to highlight multi-line commands. 
 - > To highlight a key takeaway, a warning, or a tip, use the greater-than symbol (>) to create a blockquote
 ---
 - `---` (as used above) as dividers
+- - [`x`] as checkboxes
