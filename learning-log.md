@@ -85,3 +85,4 @@ So when you run git push origin main, you are telling Git: "Push my local 'main'
 
 ## Profile README
 - A special repository that displays its README.md directly on your profile page.
+- The repo name is the same as your username
