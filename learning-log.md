@@ -21,24 +21,24 @@ git add file_name
 - git commit
 git commit -m "message"
 - git status
-- git log **(Use `git log --oneline` for a compact version of your commit history)**
-<br>
+- git log **(Use `git log --oneline` for a compact version of your commit history)**  
+
 - git checkout -b branch_name   (Alternatively, you can use the modern command: `git switch -c branch_name`) 
 (creates a new branch with the branch name)
 (If the branch exists, switch to it using: `git checkout branch_name`)
 - git branch
 - git merge
 git merge other_branch
-- git merge --abort   (to well abort the merging if a conflict arose and you want to pause and look back)
-<br>
+- git merge --abort   (to well abort the merging if a conflict arose and you want to pause and look back)  
+
 - git push
 - git pull
 - git fetch (fetch a branch from github)
-- git clone
-<br>
+- git clone  
+
 - git branch -d branch_name (delete branch locally)
 - git branch -D branch_name (forced deletion if branch not fully merged)
-- git push origin --delete branch_name (delete remotely if branch to be deleted from github too)
+- git push origin --delete branch_name (delete remotely if branch to be deleted from github too)  
 
 ## The setup (local repo to GitHub)
 **If setting up for the first time**
