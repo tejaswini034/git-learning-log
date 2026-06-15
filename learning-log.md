@@ -1,14 +1,14 @@
 # My Learning Log
 
 ## About This Project
-I'm learning Git and version control to track my work.
+I'm learning Git and version control *properly* to track my work.
 
 ## Goals
 - [x] Understand how commits work
 - [x] Learn branching and merging
 - [x] Push my work to GitHub
 
-## What I Learned Today
+## Points 
 - Git is like a time machine for your files
 - Every commit is a snapshot you can go back to
 - Branches allow you to experiment without affecting the main project
@@ -22,8 +22,7 @@ git add file_name
 git commit -m "message"
 - git status
 - git log **(Use `git log --oneline` for a compact version of your commit history)**
-
-
+<br>
 - git checkout -b branch_name   (Alternatively, you can use the modern command: `git switch -c branch_name`) 
 (creates a new branch with the branch name)
 (If the branch exists, switch to it using: `git checkout branch_name`)
@@ -31,14 +30,12 @@ git commit -m "message"
 - git merge
 git merge other_branch
 - git merge --abort   (to well abort the merging if a conflict arose and you want to pause and look back)
-
-
+<br>
 - git push
 - git pull
 - git fetch (fetch a branch from github)
 - git clone
-
-
+<br>
 - git branch -d branch_name (delete branch locally)
 - git branch -D branch_name (forced deletion if branch not fully merged)
 - git push origin --delete branch_name (delete remotely if branch to be deleted from github too)
@@ -68,7 +65,7 @@ So when you run git push origin main, you are telling Git: "Push my local 'main'
 (I could use absolutely any other word other than origin - but that's the industry standard)
 
 ## graph symbols meaning 
-- * means a commit
+- `*` means a commit
 - | means history continuing 
 - / or \ means a branch split or merge
 
@@ -76,9 +73,10 @@ So when you run git push origin main, you are telling Git: "Push my local 'main'
 - `*ab*` for *italics*
 - `**abc**` for **bold**
 - `***abc***` for ***both***
--  ```...``` to `highlight` code and commands
+- (backtick)...(backtick) to `highlight` code and commands
 - Use triple backticks (```) on separate lines to highlight multi-line commands. 
 - > To highlight a key takeaway, a warning, or a tip, use the greater-than symbol (>) to create a blockquote
 ---
 - `---` (as used above) as dividers
-- - [`x`] as checkboxes
+- [`x`] as checkboxes
+- `-` or `*` for bullets i.e - or *
