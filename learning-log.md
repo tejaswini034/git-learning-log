@@ -82,3 +82,6 @@ So when you run git push origin main, you are telling Git: "Push my local 'main'
 - [`x`] as checkboxes
 - `-` or `*` for bullets i.e - or *
 - use double space for continuing on the next line
+
+## Profile README
+- A special repository that displays its README.md directly on your profile page.
