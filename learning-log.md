@@ -40,7 +40,7 @@ git merge other_branch
 - git branch -D branch_name (forced deletion if branch not fully merged)
 - git push origin --delete branch_name (delete remotely if branch to be deleted from github too)
 
-# If doing for the first time (there are no files locally, no commits especially)
+## The setup (local repo to GitHub)
 - echo "# git-learning-log" >> README.md
 - git init
 - git add README.md
@@ -52,7 +52,7 @@ git merge other_branch
 - git push -u origin main
 - git push origin add-resources
 
-# What's origin?
+## What's origin?
 It acts as a shortcut: Typing out a long URL like https://github.com/tejaswini034/git-learning-log.git every single time you want to push would be exhausting. By running git remote add origin <URL>, you are telling Git: "From now on, whenever I say 'origin', I mean this exact URL."
 So when you run git push origin main, you are telling Git: "Push my local 'main' branch to the remote destination nicknamed 'origin'."
 (I could use absolutely any other word other than origin - but that's the industry standard)
