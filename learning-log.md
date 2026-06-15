@@ -5,6 +5,7 @@ I'm learning Git and version control *properly* to track my work.
 
 ## Goals
 - [x] Understand how commits work
+- [x] Understand the various Git commands
 - [x] Learn branching and merging
 - [x] Push my work to GitHub
 
@@ -38,7 +39,7 @@ git merge other_branch
 ---
 - git branch -d branch_name (delete branch locally)
 - git branch -D branch_name (forced deletion if branch not fully merged)
-- git push origin --delete branch_name (delete remotely if branch to be deleted from github too)  
+- git push origin --delete branch_name (delete remotely if branch to be deleted from github too)   
 
 ## The setup (local repo to GitHub)
 **If setting up for the first time**
@@ -57,7 +58,7 @@ git merge other_branch
 **or push an existing repo**
 - git remote add origin https://github.com/your GitHub username/git-learning-log.git
 - git branch -M main
-- git push -u origin main
+- git push -u origin main  
 
 ## What's origin?
 It acts as a shortcut: Typing out a long URL like https://github.com/tejaswini034/git-learning-log.git every single time you want to push would be exhausting. By running git remote add origin <URL>, you are telling Git: "From now on, whenever I say 'origin', I mean this exact URL."  
@@ -77,6 +78,7 @@ So when you run git push origin main, you are telling Git: "Push my local 'main'
 - Use triple backticks (```) on separate lines to highlight multi-line commands. 
 - > To highlight a key takeaway, a warning, or a tip, use the greater-than symbol (>) to create a blockquote
 ---
-- `---` (as used above) as dividers
+- `---` (as used above) for dividers
 - [`x`] as checkboxes
 - `-` or `*` for bullets i.e - or *
+- use double space for continuing on the next line
