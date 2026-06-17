@@ -60,6 +60,8 @@ git merge other_branch
 - git branch -M main
 - git push -u origin main  
 
+## Github to local repo 
+- git pull origin main (first ensure you're on main by git checkout main)
 ## What's origin?
 It acts as a shortcut: Typing out a long URL like https://github.com/tejaswini034/git-learning-log.git every single time you want to push would be exhausting. By running git remote add origin <URL>, you are telling Git: "From now on, whenever I say 'origin', I mean this exact URL."  
 So when you run git push origin main, you are telling Git: "Push my local 'main' branch to the remote destination nicknamed 'origin'."  
@@ -82,6 +84,7 @@ So when you run git push origin main, you are telling Git: "Push my local 'main'
 - [`x`] as checkboxes
 - `-` or `*` for bullets i.e - or *
 - use double space for continuing on the next line
+- `<!-- xyz -->` for comments in the md file (not visible)
 
 ## Profile README
 - A special repository that displays its README.md directly on your profile page.
