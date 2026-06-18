@@ -27,6 +27,7 @@ git commit -m "message"
 - git checkout -b branch_name   (Alternatively, you can use the modern command: `git switch -c branch_name`) 
 (creates a new branch with the branch name)
 (If the branch exists, switch to it using: `git checkout branch_name`)
+(The convention is feature/<issue-number>-<description> - like feature/3-add-next-steps)
 - git branch
 - git merge
 git merge other_branch
@@ -62,6 +63,7 @@ git merge other_branch
 
 ## Github to local repo 
 - git pull origin main (first ensure you're on main by git checkout main)
+
 ## What's origin?
 It acts as a shortcut: Typing out a long URL like https://github.com/tejaswini034/git-learning-log.git every single time you want to push would be exhausting. By running git remote add origin <URL>, you are telling Git: "From now on, whenever I say 'origin', I mean this exact URL."  
 So when you run git push origin main, you are telling Git: "Push my local 'main' branch to the remote destination nicknamed 'origin'."  
@@ -96,3 +98,10 @@ So when you run git push origin main, you are telling Git: "Push my local 'main'
 - [Pro Git Book](https://git-scm.com/book/en/v2) - Free comprehensive Git reference
 - [GitHub Docs](https://docs.github.com) - Official GitHub documentation
 - [Oh My Git!](https://ohmygit.org) - Interactive game to learn Git
+
+# Meaning of Closes #4
+When your PR description contains a keyword like Closes #1, GitHub automatically closes the linked Issue when the PR merges into the default branch. 
+
+
+## Next Steps
+- Learn about rebasing and interactive rebase
