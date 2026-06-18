@@ -105,3 +105,5 @@ When your PR description contains a keyword like Closes #1, GitHub automatically
 
 ## Next Steps
 - Learn about rebasing and interactive rebase
+- Explore GitHub Actions for automation
+- Practice contributing to open source projects
