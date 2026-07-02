@@ -39,7 +39,9 @@ git merge other_branch
 - git clone  
 ---
 - git branch -d branch_name (delete branch locally)
-- git branch -D branch_name (forced deletion if branch not fully merged)
+
+- git branch -D branch_name (forced deletion if branch not fully merged - usually after squash merge - Git creates a brand-new commit with different hashes. Your original branch commits don't appear in main's history anymore so -d thinks the branch isn't merged, even though the content is there.)
+
 - git push origin --delete branch_name (delete remotely if branch to be deleted from github too)   
 
 ## The setup (local repo to GitHub)
@@ -63,6 +65,7 @@ git merge other_branch
 
 ## Github to local repo 
 - git pull origin main (first ensure you're on main by git checkout main)
+(after a PR is merged, we still need to pull that to main)
 
 ## What's origin?
 It acts as a shortcut: Typing out a long URL like https://github.com/tejaswini034/git-learning-log.git every single time you want to push would be exhausting. By running git remote add origin <URL>, you are telling Git: "From now on, whenever I say 'origin', I mean this exact URL."  
