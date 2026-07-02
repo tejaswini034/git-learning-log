@@ -110,3 +110,11 @@ When your PR description contains a keyword like Closes #1, GitHub automatically
 - Learn about rebasing and interactive rebase
 - Explore GitHub Actions for automation
 - Practice contributing to open source projects
+
+# Pull request template
+- mkdir .github
+- create a file - pull_request_template.md
+- save, commit, push
+For different templates: 
+- .github/PULL_REQUEST_TEMPLATE/bug_fix.md
+- .github/PULL_REQUEST_TEMPLATE/new_feature.md
