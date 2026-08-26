@@ -22,12 +22,12 @@ git add file_name
 - git commit
 git commit -m "message"
 - git status
-- git log **(Use `git log --oneline` for a compact version of your commit history)**  
+- git log **(Use `git log --oneline` for a compact version of your commit history - q to exit)**  
 ---
 - git checkout -b branch_name   (Alternatively, you can use the modern command: `git switch -c branch_name`) 
 (creates a new branch with the branch name)
 (If the branch exists, switch to it using: `git checkout branch_name`)
-(The convention is feature/<issue-number>-<description> - like feature/3-add-next-steps)
+(The convention of branch name is feature/<issue-number>-<description> - like feature/3-add-next-steps)
 - git branch
 - git merge
 git merge other_branch
@@ -72,6 +72,37 @@ It acts as a shortcut: Typing out a long URL like https://github.com/tejaswini03
 So when you run git push origin main, you are telling Git: "Push my local 'main' branch to the remote destination nicknamed 'origin'."  
 (I could use absolutely any other word other than origin - but that's the industry standard)
 
+# Issues
+- Create an Issue on Github - assign it to yourself or someone else
+
+# pushing a new branch to Github when that branch doesn't exist on Github yet
+- git push --set-upstream origin <branch_name>
+(The --set-upstream flag tells Git to create the branch on GitHub and link your local branch to it. This is only needed the first time you push a new branch. Future pushes on this branch only need git push because the link is already set.)
+
+# Pull Requests
+- Go to Pull Requests tab on Github. If you pushed a new branch to Github there should be a Compare & Pull Request option
+- In the description body, type Closes #<issue_number> (like #1) - this will automatically close the issue 
+- PR is now on Github - everyone gets the changes but it hasn't been merged into main yet
+- Review the merge pull request on Github
+- If all's fine, merge and cleanup by deleting the branch on Github
+- On VSCode, git checkout main and git pull origin main
+
+When you join a professional software team, your workflow will look like this combination of local Git and GitHub PRs:
+1. Create a branch locally: You switch to a new feature branch (e.g., git checkout -b feature/add-login).
+2. Do your work: You edit files, test them on your computer, stage, and commit.
+3. Push your branch: You push your feature branch to GitHub (git push origin feature/add-login).
+4. Open a PR: You go to GitHub, open a PR from feature/add-login to main.
+5. The Conflict Stage: If a teammate edited the same file and merged their PR first, GitHub will warn you on your PR page: "This branch has conflicts that must be resolved."
+6. The Resolution: You don't merge on GitHub yet. Instead, you run git pull origin main on your computer (while still on your feature branch) to bring their changes down, solve the conflict markers locally, commit the resolution, and push.
+7. Merge: Once the conflicts are solved and your team reviews your code, you finally merge the PR on GitHub
+
+Oh also 
+- git branch -d feature/branch_name
+(to delete the feature branch on your local machine)
+(On Github just use the button)
+
+- git branch -D feature/branch_name
+(if you did a squash merge)
 ## graph symbols meaning 
 - `*` means a commit
 - | means history continuing 
