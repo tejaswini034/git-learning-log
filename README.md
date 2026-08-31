@@ -17,8 +17,9 @@ I'm learning Git and version control *properly* to track my work.
 
 ## The Process 
 - git init
-- git add
+- git add (to stage)
 git add file_name
+- git rm --cached <file>..." (to unstage)
 - git commit
 git commit -m "message"
 - git status
